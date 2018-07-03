@@ -35,3 +35,28 @@ Run `spin --test` to see some more spintax samples.
 ## Installation ##
 
 Copy or symlink the `spin` executable to any directory in your path.
+
+
+## As a Python Module ##
+
+To use this as a Python module to spin marked up text, place the `spin` file
+somewhere in your `$PYTHONPATH` and use it like this.
+
+```python
+from spin import Spintax
+
+
+try:
+    f = open('/path/to/spintax-file.txt', 'r')
+except:
+    print("Invalid filename.")
+    print("Could not open: %s" % args[0])
+    print_usage()
+    sys.exit(1)
+
+unspun_text = f.read()
+
+spintax = Spintax()
+
+spun_text = spintax.spin(unspun_text)
+```
