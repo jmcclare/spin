@@ -2,6 +2,7 @@
 
 import sys
 from optparse import OptionParser
+import re
 
 
 usage_text = """\
@@ -45,22 +46,18 @@ class Spintax:
         return str
     
     def incomplete(self, str):
-        import re
         complete = re.search("{[^{}]+?}", str)
         return complete
         
     def preg_match(self, pattern, subject):
-        import re
         match = re.search(pattern, subject)
         return match.group()
     
     def preg_match_all(self, pattern, subject):
-        import re
         matches = re.findall(pattern, subject)
         return matches
         
     def preg_replace(self, pattern, replacement, subject):
-        import re
         result = re.sub(pattern, replacement, subject)
         return result
 
