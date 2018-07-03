@@ -7,6 +7,8 @@ Usage:
 
     spin [OPTIONS] FILENAME
 
+See `spin --help` for more.
+
 Here is a sample of some spintax.
 
     I recently {fried|baked|totaled} my 300GB Seagate {hard drive|hard disk} by accident.
