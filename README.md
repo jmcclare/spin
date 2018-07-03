@@ -7,6 +7,10 @@ Usage:
 
     spin [OPTIONS] FILENAME
 
+To output the spun text to a file, do this:
+
+    spin marked-up.txt > spun.txt
+
 See `spin --help` for more.
 
 Here is a sample of some spintax.
