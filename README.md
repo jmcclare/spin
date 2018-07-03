@@ -29,6 +29,8 @@ You can fill in different options for words, phrases, sentences, or entire
 paragraphs. One article marked up with spintax can be spun hundreds of times to
 make unique, readable versions.
 
+Run `spin --test` to see some more spintax samples.
+
 
 ## Installation ##
 
