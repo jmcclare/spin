@@ -40,6 +40,8 @@ Run `spin --test` to see some more spintax samples.
 
 Copy or symlink the `spin` executable to any directory in your path.
 
+Make sure it is executable with `chmod ug+x spin`
+
 
 ## As a Python Module ##
 
