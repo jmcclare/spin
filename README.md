@@ -42,11 +42,18 @@ Copy or symlink the `spin` executable to any directory in your path.
 
 Make sure it is executable with `chmod ug+x spin`
 
+In Ubuntu 18.04 and later the default `~/.profile` will add `~/.local/bin` to
+your path if it exists. You can copy or symlink `spin` into that.
+
 
 ## As a Python Module ##
 
-To use this as a Python module to spin marked up text, place the `spin` file
-somewhere in your `$PYTHONPATH` and use it like this.
+To use this as a Python module to spin marked up text, simplink `spin` inder
+the name `spin.py` to somewhere in your `$PYTHONPATH` like this:
+
+    ln -s spin /path/to/spin.py
+
+…and use it like this.
 
 ```python
 from spin import Spintax
