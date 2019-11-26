@@ -53,7 +53,7 @@ the name `spin.py` to somewhere in your `$PYTHONPATH` like this:
 
     ln -s spin /path/to/spin.py
 
-…and use it like this.
+…and use it like this:
 
 ```python
 from spin import Spintax
